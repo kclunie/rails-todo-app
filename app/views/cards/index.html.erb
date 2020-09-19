@@ -1,0 +1,7 @@
+<h1>My Cards</h1>
+<%= link_to "Add a new card", new_card_path %>
+<br><br>
+
+<% @cards.each do |c| %>
+    <li><%= c.title %></li>
+    <% end %>

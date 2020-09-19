@@ -1,0 +1,10 @@
+<h1>Create a New Form</h1>
+
+<%= form_for @card do |c| %>
+
+    <%= c.label :title %>
+    <%= c.text_field :title %>
+
+    <%= c.submit 'Add Card' %>
+
+    <% end %>
