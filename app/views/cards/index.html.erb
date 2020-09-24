@@ -3,5 +3,5 @@
 <br><br>
 
 <% @cards.each do |c| %>
-    <li><%= c.title %></li>
+    <li><%= link_to "#{c.title}", card_lists_path(c) %></li>
     <% end %>
