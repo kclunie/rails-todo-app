@@ -1,0 +1,9 @@
+<%= form_for @list do |l| %>
+    <%= l.hidden_field :card_id, :value => l.card_id %>
+
+    <%= l.label :description %>
+    <%= l.text_field :description %>
+
+    <% l.submit "add list" %>
+
+<% end %>
