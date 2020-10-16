@@ -1,10 +1,8 @@
-<h1>Create a New Form</h1>
+<%= form_for @card do |f| %>
 
-<%= form_for @card do |c| %>
+    <%= f.label :title%>
+    <%= f.text_field :title%>
 
-    <%= c.label :title %>
-    <%= c.text_field :title %>
+    <%= f.submit 'Create Palindrome' %>
 
-    <%= c.submit 'Add Card' %>
-
-    <% end %>
+<% end %>
