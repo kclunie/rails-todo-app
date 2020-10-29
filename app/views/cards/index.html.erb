@@ -1,7 +1,7 @@
-<h1>My Cards</h1>
-<%= link_to "Add a new card", new_card_path %>
-<br><br>
+<h1>Palindromes</h1>
+<% @cards.each do |f| %>
+   
+    <li><%= f.palindrome(f.title) %></li>
 
-<% @cards.each do |c| %>
-    <li><%= link_to "#{c.title}", card_lists_path(c) %></li>
+    <br>
     <% end %>
