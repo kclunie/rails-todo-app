@@ -1,7 +1,12 @@
-<h1>Palindromes</h1>
+<h1>Palindrome Extravagava</h1>
+<br>
+<%= link_to "Find the longest palindrome!", new_card_path %>
+<br><br>
 <% @cards.each do |f| %>
    
     <li><%= f.palindrome(f.title) %></li>
 
     <br>
     <% end %>
+    <br>
+
